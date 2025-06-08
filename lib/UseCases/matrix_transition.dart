@@ -98,7 +98,7 @@ class _MatrixTransitionUseCaseState extends State<MatrixTransitionUseCase>
         CurveDiagram(
           name: widget.curveItem.label,
           caption: 'Curve.${widget.curveItem.label}',
-          curve:  widget.curveItem.curve,
+          curve: widget.curveItem.curve,
           duration: Duration(milliseconds: widget.duration),
         ),
       ],

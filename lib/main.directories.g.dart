@@ -11,8 +11,9 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:flutter_animations_book/UseCases/animated_card.dart' as _i2;
-import 'package:flutter_animations_book/UseCases/f1_track.dart' as _i3;
-import 'package:flutter_animations_book/UseCases/matrix_transition.dart' as _i4;
+import 'package:flutter_animations_book/UseCases/drag_drop.dart' as _i3;
+import 'package:flutter_animations_book/UseCases/f1_track.dart' as _i4;
+import 'package:flutter_animations_book/UseCases/matrix_transition.dart' as _i5;
 import 'package:widgetbook/widgetbook.dart' as _i1;
 
 final directories = <_i1.WidgetbookNode>[
@@ -27,17 +28,24 @@ final directories = <_i1.WidgetbookNode>[
         ),
       ),
       _i1.WidgetbookLeafComponent(
+        name: 'DragDrop',
+        useCase: _i1.WidgetbookUseCase(
+          name: 'DragDrop',
+          builder: _i3.buildDragDropUseCase,
+        ),
+      ),
+      _i1.WidgetbookLeafComponent(
         name: 'F1Track',
         useCase: _i1.WidgetbookUseCase(
           name: 'F1 Track',
-          builder: _i3.buildF1TrackUseCase,
+          builder: _i4.buildF1TrackUseCase,
         ),
       ),
       _i1.WidgetbookLeafComponent(
         name: 'MatrixTransitionUseCase',
         useCase: _i1.WidgetbookUseCase(
           name: 'MatrixTransition',
-          builder: _i4.buildMatrixTransitionUseCase,
+          builder: _i5.buildMatrixTransitionUseCase,
         ),
       ),
     ],

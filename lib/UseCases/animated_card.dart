@@ -16,20 +16,21 @@ Widget buildMatrixTransitionUseCase(BuildContext context) {
       max: 5000,
       initialValue: 500,
     ),
-
     curveItem: context.knobs.list<CurveItem>(
       label: 'Curve',
       labelBuilder: (value) => value.label,
       options: curveItems,
       initialOption: curveItems.first,
     ),
-    diagramAlignment: context.knobs.list(label: 'Diagram alignment', options: [
-      Alignment.topLeft,
-      Alignment.topRight,
-      Alignment.bottomLeft,
-      Alignment.bottomRight,
-    ],
-    initialOption: Alignment.topLeft,
+    diagramAlignment: context.knobs.list(
+      label: 'Diagram alignment',
+      options: [
+        Alignment.topLeft,
+        Alignment.topRight,
+        Alignment.bottomLeft,
+        Alignment.bottomRight,
+      ],
+      initialOption: Alignment.topLeft,
     ),
   );
 }
@@ -106,11 +107,10 @@ class _AnimatedCardState extends State<AnimatedCard> {
                               style: Theme.of(
                                 context,
                               ).textTheme.bodyMedium!.copyWith(
-                                color:
-                                    Theme.of(
+                                    color: Theme.of(
                                       context,
                                     ).colorScheme.onSurfaceVariant,
-                              ),
+                                  ),
                             ),
                           ],
                         ),
@@ -118,7 +118,6 @@ class _AnimatedCardState extends State<AnimatedCard> {
                     ),
                   ),
                 ),
-
                 SegmentedButton<LayoutSize>(
                   segments: const <ButtonSegment<LayoutSize>>[
                     ButtonSegment<LayoutSize>(

@@ -42,7 +42,9 @@ class AnimatedF1Car extends StatelessWidget {
       children: [
         Text(label),
         AnimatedAlign(
-          alignment: animationController.value == 0 ? Alignment.centerRight : Alignment.centerLeft,
+          alignment: animationController.value == 0
+              ? Alignment.centerRight
+              : Alignment.centerLeft,
           duration: animationController.duration!,
           curve: curve,
           child: Text(carEmoji, style: TextStyle(fontSize: 60)),
