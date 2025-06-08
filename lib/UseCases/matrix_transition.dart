@@ -8,29 +8,29 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 import '../utiils/curve_diagram.dart';
 import '../utiils/curves.dart';
 
-// @widgetbook.UseCase(name: 'MatrixTransition', type: MatrixTransitionUseCase)
-// Widget buildMatrixTransitionUseCase(BuildContext context) {
-//   return MatrixTransitionUseCase(
-//     curveItem: context.knobs.list<CurveItem>(
-//       label: 'Curve',
-//       labelBuilder: (value) => value.label,
-//       options: curveItems,
-//       initialOption: curveItems.first,
-//     ),
-//     duration: context.knobs.int.slider(
-//       label: 'Duration (ms)',
-//       min: 1,
-//       max: 5000,
-//       initialValue: 2000,
-//     ),
-//     logoSize: context.knobs.double.slider(
-//       label: 'FlutterLogo size',
-//       min: 0,
-//       max: 1000,
-//       initialValue: 150,
-//     ),
-//   );
-// }
+@widgetbook.UseCase(name: 'MatrixTransition', type: MatrixTransitionUseCase)
+Widget buildMatrixTransitionUseCase(BuildContext context) {
+  return MatrixTransitionUseCase(
+    curveItem: context.knobs.list<CurveItem>(
+      label: 'Curve',
+      labelBuilder: (value) => value.label,
+      options: curveItems,
+      initialOption: curveItems.first,
+    ),
+    duration: context.knobs.int.slider(
+      label: 'Duration (ms)',
+      min: 1,
+      max: 5000,
+      initialValue: 2000,
+    ),
+    logoSize: context.knobs.double.slider(
+      label: 'FlutterLogo size',
+      min: 0,
+      max: 1000,
+      initialValue: 150,
+    ),
+  );
+}
 
 class MatrixTransitionUseCase extends StatefulWidget {
   const MatrixTransitionUseCase({
