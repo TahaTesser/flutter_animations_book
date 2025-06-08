@@ -37,6 +37,7 @@ class WidgetbookApp extends StatelessWidget {
             ),
           ],
         ),
+        TimeDilationAddon(),
       ],
       // The [directories] variable does not exist yet,
       // it will be generated in the next step
