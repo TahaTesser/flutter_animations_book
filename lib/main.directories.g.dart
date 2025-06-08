@@ -12,6 +12,7 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:flutter_animations_book/UseCases/animated_card.dart' as _i2;
 import 'package:flutter_animations_book/UseCases/drag_drop.dart' as _i3;
+import 'package:flutter_animations_book/UseCases/draggable.dart' as _i6;
 import 'package:flutter_animations_book/UseCases/f1_track.dart' as _i4;
 import 'package:flutter_animations_book/UseCases/matrix_transition.dart' as _i5;
 import 'package:widgetbook/widgetbook.dart' as _i1;
@@ -49,5 +50,17 @@ final directories = <_i1.WidgetbookNode>[
         ),
       ),
     ],
-  )
+  ),
+  _i1.WidgetbookFolder(
+    name: 'widgets',
+    children: [
+      _i1.WidgetbookLeafComponent(
+        name: 'Draggable',
+        useCase: _i1.WidgetbookUseCase(
+          name: 'Draggable',
+          builder: _i6.buildDraggableUseCase,
+        ),
+      )
+    ],
+  ),
 ];
